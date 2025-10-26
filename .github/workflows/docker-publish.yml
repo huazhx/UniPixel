@@ -33,4 +33,4 @@ jobs:
             file: ./Dockerfile
             push: true
             tags: |
-                ${{ secrets.DOCKERHUB_USERNAME }}/unipixel_xzh_8282:v1.0.0
+                ${{ secrets.DOCKERHUB_USERNAME }}/base_cuda_conda_devel:v1.0.0
