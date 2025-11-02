@@ -15,7 +15,7 @@ stage1_ckpt_path="work_dirs/${nproc}p_stage1_1e"
 
 torchrun --nproc_per_node $nproc unipixel/train/train.py \
     --deepspeed scripts/zero2.json \
-    --model_name_or_path model_zoo/Qwen2.5-VL-3B-Instruct \
+    --model_name_or_path /model/Qwen2.5-VL-3B-Instruct \
     --base_model qwen2_5_vl \
     --conv_type chatml \
     --sam2_config configs/sam2.1_hiera_b+ \
